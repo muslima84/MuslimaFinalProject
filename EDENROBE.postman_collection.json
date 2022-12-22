@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "a9204cb5-fe4c-4ab3-a021-a76fa64dee3a",
+		"name": "EDENROBE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24862040"
+	},
+	"item": [
+		{
+			"name": "token",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "HamdanAzlan84",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "engr.muslima84@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://edenrobe.com/",
+					"protocol": "https",
+					"host": [
+						"edenrobe",
+						"com"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SKU",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "HamdanAzlan84",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "engr.muslima84@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://edenrobe.com/product/women-s-green-pret-{{sku}}",
+					"protocol": "https",
+					"host": [
+						"edenrobe",
+						"com"
+					],
+					"path": [
+						"product",
+						"women-s-green-pret-{{sku}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
